@@ -11,7 +11,7 @@ const eslintFormatter = require('react-dev-utils/eslintFormatter');
 const ModuleScopePlugin = require('react-dev-utils/ModuleScopePlugin');
 const getClientEnvironment = require('./env');
 const paths = require('./paths');
-
+const svg_raw_load_path = paths.appSrc + '/static/images/svg_raw_load'
 // Webpack uses `publicPath` to determine where the app is being served from.
 // In development, we always serve from the root. This makes config easier.
 const publicPath = '/';
@@ -153,6 +153,7 @@ module.exports = {
           },
           {
             test: /\.svg$/,
+            include: svg_raw_load_path,
             loader: 'raw-loader'
           },
           // "postcss" loader applies autoprefixer to our CSS.
