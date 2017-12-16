@@ -2,17 +2,27 @@ import React, { Component } from 'react'
 import logo from './logo.svg'
 import s from './App.css'
 import Device from 'utils/Device'
+import {Switch, Route, Link} from 'react-router-dom'
 import { MOBILE_TYPE, TABLET_TYPE } from 'constants/RESPONSIVE'
 
 export default class App extends Component {
   render () {
     return (
       <div className={s.App}>
+        <Switch>
+          <Route path={'/lol'} render={() => {
+            return (
+              <h1>Hohohohohoho!</h1>
+            )
+          }}/>
+        </Switch>
+
         <header className={s['App-header']}>
           <img src={logo} className={s['App-logo']} alt="logo" />
           <h1 className={s['App-title']}>Welcome to React</h1>
         </header>
         <p className={s['App-intro']}>
+          <Link to={'/lol'}>Bdish!</Link>
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
       </div>
