@@ -11,22 +11,9 @@ export default class App extends Component {
     return (
       <div className={s.App}>
         <PageHeader/>
-        <Switch>
-          <Route path={'/lol'} render={() => {
-            return (
-              <h1>Hohohohohoho!</h1>
-            )
-          }}/>
-        </Switch>
+        <main>
 
-        <header className={s['App-header']}>
-          <img src={logo} className={s['App-logo']} alt="logo" />
-          <h1 className={s['App-title']}>Welcome to React</h1>
-        </header>
-        <p className={s['App-intro']}>
-          <Link to={'/lol'}>Bdish!</Link>
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        </main>
       </div>
     )
   }
