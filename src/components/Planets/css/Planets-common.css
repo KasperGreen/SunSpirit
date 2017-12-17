@@ -13,20 +13,20 @@
   opacity: 0;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(12);
+  transform: translate(-50%, -50%) scale(12) rotate(87deg);
   shape-rendering: geometricPrecision;
   text-rendering: geometricPrecision;
   image-rendering: optimizeQuality;
   fill-rule: evenodd;
   clip-rule: evenodd;
-  transition: all 1.42s ease-out;
+  transition: all .42s cubic-bezier(0.42,-0.07, 0.45, 1.08);
 }
 
 .svg_after_load {
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1) rotate(0);
   composes: svg;
   height: 220%;
-  opacity: .8;
+  opacity: .9;
 }
 
 .fill {

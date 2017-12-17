@@ -6,13 +6,15 @@ import nebulas from 'components/Nebula'
 
 export default class PageHeader extends PureComponent {
   state = {
-    active_background_url: nebulas[0]
+    active_background_url: nebulas[0],
+    loaded: false
   }
 
   render () {
     const {
       state: {
-        active_background_url
+        active_background_url,
+        loaded
       }
     } = this
     return (
@@ -20,10 +22,14 @@ export default class PageHeader extends PureComponent {
         style={{backgroundImage: `url(${active_background_url})`}}
         className={s.wrapper}
       >
+        {loaded &&
         <Planets />
+        }
       </header>
     )
   }
+
+
 
   loadNextBg = () => {
     console.log('Запущен loanNextBg')
@@ -37,7 +43,11 @@ export default class PageHeader extends PureComponent {
       downloadingImage.src = bg
 
       downloadingImage.addEventListener('load', () => {
-        this.setState({active_background_url: bg})
+        this.setState(
+          {
+            active_background_url: bg,
+            loaded: this.nebulas.length === 0 ? true : false
+          })
         this.loadNextBg()
       })
     }
