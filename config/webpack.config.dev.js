@@ -11,7 +11,6 @@ const eslintFormatter = require('react-dev-utils/eslintFormatter')
 const ModuleScopePlugin = require('react-dev-utils/ModuleScopePlugin')
 const getClientEnvironment = require('./env')
 const paths = require('./paths')
-const svg_raw_load_path = paths.appSrc + '/static/images/svg_raw_load'
 // Webpack uses `publicPath` to determine where the app is being served from.
 // In development, we always serve from the root. This makes config easier.
 const publicPath = '/'
@@ -157,7 +156,7 @@ module.exports = {
           },
           {
             test: /\.svg$/,
-            include: svg_raw_load_path,
+            include: [/svg_raw_load/],
             loader: 'raw-loader'
           },
           // "postcss" loader applies autoprefixer to our CSS.
@@ -184,6 +183,7 @@ module.exports = {
                   // https://github.com/facebookincubator/create-react-app/issues/2677
                   ident: 'postcss',
                   plugins: () => [
+                    require('postcss-import'),
                     require('postcss-flexbugs-fixes'),
                     autoprefixer({
                                    browsers: [
@@ -210,7 +210,7 @@ module.exports = {
             // it's runtime that would otherwise processed through "file" loader.
             // Also exclude `html` and `json` extensions so they get processed
             // by webpacks internal loaders.
-            exclude: [/\.js$/, /\.html$/, /\.json$/],
+            exclude: [/\.js$/, /\.html$/, /\.json$/, /svg_raw_load/],
             loader: require.resolve('file-loader'),
             options: {
               name: 'static/media/[name].[hash:8].[ext]',

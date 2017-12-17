@@ -157,6 +157,11 @@ module.exports = {
               compact: true,
             },
           },
+          {
+            test: /\.svg$/,
+            include: [/svg_raw_load/],
+            loader: 'raw-loader'
+          },
           // The notation here is somewhat confusing.
           // "postcss" loader applies autoprefixer to our CSS.
           // "css" loader resolves paths in CSS and adds assets as dependencies.
@@ -196,6 +201,7 @@ module.exports = {
                         // https://github.com/facebookincubator/create-react-app/issues/2677
                         ident: 'postcss',
                         plugins: () => [
+                          require('postcss-import'),
                           require('postcss-flexbugs-fixes'),
                           autoprefixer({
                             browsers: [
@@ -226,7 +232,7 @@ module.exports = {
             // it's runtime that would otherwise processed through "file" loader.
             // Also exclude `html` and `json` extensions so they get processed
             // by webpacks internal loaders.
-            exclude: [/\.js$/, /\.html$/, /\.json$/],
+            exclude: [/\.js$/, /\.html$/, /\.json$/, /svg_raw_load/],
             options: {
               name: 'static/media/[name].[hash:8].[ext]',
             },
