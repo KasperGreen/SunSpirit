@@ -3,5 +3,7 @@
   position: relative;
   display: flex;
   background: #FEFEFE;
+  align-items: stretch;
+  justify-content: space-between;
 }
 

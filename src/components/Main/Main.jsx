@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react'
 import s from './css'
-import { Party } from 'exportComponents'
+import { Party, PartyList } from 'exportComponents'
 
 
 export default class Main extends PureComponent {
@@ -10,6 +10,7 @@ export default class Main extends PureComponent {
     return (
       <main className={s.wrapper}>
         <Party/>
+        <PartyList/>
       </main>
     )
   }
