@@ -32,9 +32,6 @@ export default class PageHeader extends PureComponent {
 
 
   loadNextBg = () => {
-    console.log('Запущен loanNextBg')
-    console.log(this.nebulas.length, ' — this.nebulas.length | ')
-    console.log(this.nebulas, ' — this.nebulas | ')
 
     if (this.nebulas.length > 0) {
 
