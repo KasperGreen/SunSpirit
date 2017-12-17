@@ -24,8 +24,8 @@ export default class Planets extends PureComponent {
           viewBox="0 0 2140.23 1081.31"
         >
           <linearGradient id="linear-gradient">
-            <stop offset="0%" stop-color="#5566FF" />
-            <stop offset="100%" stop-color="#ff7766" />
+            <stop offset="0%" stop-color="hsla(355, 99%, 78%, 1)" />
+            <stop offset="100%" stop-color="hsla(264, 46%, 87%, 1)" />
           </linearGradient>
           <g id="layer_x0020_1">
             <path
