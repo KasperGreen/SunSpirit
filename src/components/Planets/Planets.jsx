@@ -50,11 +50,11 @@ export default class Planets extends PureComponent {
             loaded: true
           }
         )
-      }
-    ),
-      1200
-  }
+      },
+      420
+    )
 
+  }
 
   timeout
 
