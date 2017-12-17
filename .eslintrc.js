@@ -174,14 +174,6 @@ module.exports = {
     'no-this-before-super': 'warn',
     'no-throw-literal': 'warn',
     'no-unexpected-multiline': 'warn',
-    'no-unused-expressions': [
-      'warn',
-      {
-        allowShortCircuit: true,
-        allowTernary: true,
-        allowTaggedTemplates: true,
-      },
-    ],
     'no-unused-labels': 'warn',
     'no-unused-vars': [
       'warn',
