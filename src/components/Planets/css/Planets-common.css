@@ -10,14 +10,23 @@
   position: absolute;
   width: 80%;
   height: 220%;
+  opacity: 0;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(12);
   shape-rendering: geometricPrecision;
   text-rendering: geometricPrecision;
   image-rendering: optimizeQuality;
   fill-rule: evenodd;
-  clip-rule: evenodd
+  clip-rule: evenodd;
+  transition: all 1.42s ease-out;
+}
+
+.svg_after_load {
+  transform: translate(-50%, -50%) scale(1);
+  composes: svg;
+  height: 220%;
+  opacity: .8;
 }
 
 .fill {
