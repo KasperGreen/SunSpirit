@@ -43,7 +43,7 @@
 .title {
   font-size: 5.2rem;
   font-weight: 900;
-  color: #333;
+  color: rgba(57, 57, 57, 0.8117647058823529);
   padding-top: 2.2rem;
   margin-bottom: 1.2rem;
   z-index: 2;
