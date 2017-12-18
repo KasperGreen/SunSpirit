@@ -14,7 +14,7 @@ const artists = [
     name: 'Jati Div',
     href: 'https://soundcloud.com/jati_div'
   }, {
-    name: '[special] Cloower Wooma (Спб.)',
+    name: '[special] Cloower Wooma',
     href: 'https://soundcloud.com/cloowerwooma',
     special: true
   },
@@ -52,8 +52,12 @@ export default class Party extends PureComponent {
         <div className={s.background} style={{backgroundImage: `url(${bg_path})`}} />
         <article className={s.article}>
           <header>
-            <h1 className={s.title}>Атмосфера 5.1.0.12</h1>
-            <cite className={s.genre}>downtempo rave</cite>
+            <h1 className={s.title}>
+              Atmosphere 5.1.0.12
+            </h1>
+            <cite className={s.genre}>
+              downtempo rave
+            </cite>
           </header>
           <nav className={s.persons}>
             <ul>

@@ -6,7 +6,8 @@
   align-self: center;
   position: relative;
   background: #FEFEFE;
-  text-align: center;
+  text-align: right;
+  padding: 0 4.2rem;
   overflow: hidden;
   height: 100%;
   width: 100%;
@@ -60,6 +61,7 @@
 .person {
   position: relative;
   font-size: 3.1415926535rem;
+  text-transform: uppercase;
   line-height: 1.42;
   z-index: 2;
 }
