@@ -9,6 +9,7 @@
   text-align: center;
   overflow: hidden;
   height: 100%;
+  width: 100%;
 }
 
 .background {
@@ -51,6 +52,7 @@
 .person {
   position: relative;
   text-decoration: none;
+  text-transform: uppercase;
   color: #6BAFE3;
   font-size: 3.1415926535rem;
   line-height: 1.42;

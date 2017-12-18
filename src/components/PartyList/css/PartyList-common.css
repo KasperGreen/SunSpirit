@@ -82,6 +82,9 @@
 
 @media screen and (orientation: portrait) {
   .list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
     flex-direction: row;
     padding: 0;
   }
