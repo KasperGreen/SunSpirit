@@ -75,9 +75,11 @@
 
 .active_party .date {
   background: #fefefe;
-  color: #121212;
+  color: #00683e;
+
   text-shadow: none;
-  text-decoration: overline;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 @media screen and (orientation: portrait) {
