@@ -22,9 +22,33 @@ const artists = [
 
 export default class Party extends PureComponent {
 
+  state = {
+    loaded: false
+  }
+
+  timeout
+
+  componentWillMount () {
+    this.timeout = setTimeout(
+      () => {
+        this.setState({loaded: true})
+      },
+      842)
+  }
+
+  componentWillUnmount () {
+    clearTimeout(this.timeout)
+  }
+
   render () {
+
+  const {
+    state: {
+      loaded
+    }
+  } = this
     return (
-      <div className={s.wrapper}>
+      <div className={loaded ? s.loaded_wrapper : s.wrapper}>
         <div className={s.background} style={{backgroundImage: `url(${bg_path})`}} />
         <article className={s.article}>
           <header>

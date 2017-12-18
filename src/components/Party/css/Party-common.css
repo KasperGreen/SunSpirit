@@ -11,6 +11,10 @@
   height: 100%;
   width: 100%;
 }
+.loaded_wrapper
+{
+  composes: wrapper;
+}
 
 .background {
   transition: all .42s ease-in-out;
@@ -22,8 +26,12 @@
   top: 0;
   left: 0;
   z-index: 1;
-  opacity: .22121987;
+  opacity: .8;
 
+}
+
+.loaded_wrapper .background {
+  opacity: .22121987;
 }
 
 .article {
