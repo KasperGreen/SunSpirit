@@ -20,7 +20,7 @@ export default class PageHeader extends PureComponent {
     return (
       <header
         style={{backgroundImage: `url(${active_background_url})`}}
-        className={s.wrapper}
+        className={loaded ? s.loaded_wrapper : s.wrapper}
       >
         {loaded &&
         <Planets />
