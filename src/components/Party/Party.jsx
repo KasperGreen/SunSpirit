@@ -33,7 +33,7 @@ export default class Party extends PureComponent {
       () => {
         this.setState({loaded: true})
       },
-      842)
+      1800)
   }
 
   componentWillUnmount () {
