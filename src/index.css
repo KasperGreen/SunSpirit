@@ -1,10 +1,18 @@
 html {
   font-size: calc(100vw / 120);
 }
+
+@media screen and (orientation: portrait) {
+  html {
+    font-size: calc(100vw / 64);
+  }
+}
+
 html, body, * {
   font-family: 'Geometria', sans-serif;
   box-sizing: border-box;
 }
+
 * {
   margin: 0;
   padding: 0;

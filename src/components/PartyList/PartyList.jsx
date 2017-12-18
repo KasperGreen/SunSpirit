@@ -21,7 +21,7 @@ const partys = [
     name: 'Broken Beats'
   },
   {
-    date: '21/12',
+    date: '21/12 19:30',
     name: 'Downtempo Rave',
     active: true
   },
