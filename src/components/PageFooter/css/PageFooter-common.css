@@ -1,9 +1,10 @@
 .wrapper {
   position: relative;
   z-index: 4;
-  background: #fefefe;
+  background-color: #fefefe;
+  background-size: cover;
   padding: 2rem;
-  height: 20%;
+  min-height: 20%;
   box-shadow: 0 0 2rem #fefefe;
   font-size: 2.5rem;
 }
@@ -13,4 +14,11 @@
   justify-content: space-between;
 }
 
+.right {
+  text-align: right;
+}
 
+.wrapper a {
+  color: #fefefe;
+  text-shadow: .2rem .2rem #888;
+}
