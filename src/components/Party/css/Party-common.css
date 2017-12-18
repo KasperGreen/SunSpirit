@@ -62,6 +62,7 @@
   position: relative;
   font-size: 3.1415926535rem;
   text-transform: uppercase;
+  font-weight: 300;
   line-height: 1.42;
   z-index: 2;
 }
