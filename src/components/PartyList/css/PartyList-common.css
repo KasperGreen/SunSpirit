@@ -29,6 +29,7 @@
 .party {
   margin-bottom: .42rem;
   display: flex;
+
 }
 
 .date {
@@ -51,13 +52,13 @@
 
 .name {
   text-align: left;
-  font-weight: 400;
   line-height: 5rem;
   font-size: 3.2rem;
   color: #fefefe;
   text-transform: uppercase;
   text-shadow: .2rem .2rem .42rem #342318;
   padding-right: 2rem;
+  font-weight: 800;
 }
 
 .active_party {

@@ -28,7 +28,7 @@ export default class Party extends PureComponent {
         <div className={s.background} style={{backgroundImage: `url(${bg_path})`}} />
         <article className={s.article}>
           <header>
-            <h1 className={s.title}>Атмосфера 5.1.0</h1>
+            <h1 className={s.title}>Атмосфера 5.1.0.12</h1>
             <cite className={s.genre}>downtempo rave</cite>
           </header>
           <nav className={s.persons}>
