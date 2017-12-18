@@ -11,10 +11,9 @@
   height: 100%;
 }
 
-.wrapper:after {
-  content: "";
+.background {
   transition: all .42s ease-in-out;
-  background: url('static/images/earth.jpg') center center no-repeat;
+  background:  center center no-repeat;
   background-size: cover;
   position: absolute;
   width: 100%;
