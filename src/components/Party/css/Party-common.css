@@ -32,8 +32,8 @@
 }
 
 .title {
-  font-size: 3.1415926535rem;
-  font-weight: 500;
+  font-size: 5.2rem;
+  font-weight: 300;
   color: #333;
   padding-top: 2.2rem;
   margin-bottom: 1.2rem;
@@ -54,20 +54,24 @@
   text-decoration: none;
   text-transform: uppercase;
   color: #6BAFE3;
+  transition: all .12s ease-in;
+  font-weight: 300;
   font-size: 3.1415926535rem;
   line-height: 1.42;
   z-index: 2;
 }
-
-.person:hover, .person:focus {
-  color: #EDB15B;
-  text-decoration: underline;
-}
-
 .person:visited {
   color: #ad41e7;
 }
 
+.person:hover, .person:focus {
+  color: #ffc360;
+  text-decoration: underline;
+}
+
+.person:active {
+  color: #aaff02;
+}
 .special_person {
   composes: person;
   padding: 2.2rem 0;
