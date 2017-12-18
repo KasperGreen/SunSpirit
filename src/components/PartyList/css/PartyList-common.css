@@ -8,8 +8,9 @@
 .blured_background {
   position: absolute;
   z-index: 1;
-
-  opacity: .42;
+  background-position: center center;
+  background-size:cover;
+  opacity: .87;
   width: 112%;
   height: 112%;
   left: 0;
