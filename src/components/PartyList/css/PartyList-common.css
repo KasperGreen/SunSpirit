@@ -55,7 +55,6 @@
   line-height: 5rem;
   font-size: 3.2rem;
   color: #fefefe;
-  text-transform: uppercase;
   text-shadow: .2rem .2rem .42rem #342318;
   padding-right: 3.2rem;
   font-weight: 800;
@@ -71,6 +70,7 @@
 .active_party .name {
   color: #121212;
   text-shadow: none;
+  text-transform: uppercase;
   padding-left: .42rem;
 }
 
