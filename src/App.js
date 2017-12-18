@@ -7,6 +7,7 @@ export default class App extends Component {
       <div id="page_wrapper" style={{height: '100%'}}>
         <PageHeader />
         <Main />
+
       </div>
     )
   }

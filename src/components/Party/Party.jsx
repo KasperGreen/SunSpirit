@@ -23,7 +23,8 @@ export default class Party extends PureComponent {
 
   render () {
     return (
-      <article className={s.wrapper}>
+      <div className={s.wrapper}>
+        <article className={s.article}>
         <header>
           <h1 className={s.title}>Атмосфера 5.1.0</h1>
           <cite className={s.genre}>downtempo rave</cite>
@@ -41,8 +42,8 @@ export default class Party extends PureComponent {
               )
             })}
           </ul>
-        </nav>
-      </article>
+        </nav></article>
+      </div>
     )
   }
 

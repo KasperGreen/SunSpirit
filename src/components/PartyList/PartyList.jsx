@@ -28,17 +28,19 @@ const partys = [
 
 ]
 
-
 export default class PartyList extends PureComponent {
 
   render () {
     return (
       <nav className={s.wrapper}>
-        <div className={s.blured_background} style={{backgroundImage: `url(${background_url})`}}/>
+        <div className={s.blured_background} style={{backgroundImage: `url(${background_url})`}} />
         <ul className={s.list}>
           {_.map(partys, ({date, name, active}, key) => {
-            return(
-              <li className={active ? s.active_party : s.party}>
+            return (
+              <li
+                key={key}
+                className={active ? s.active_party : s.party}
+              >
                 <time className={s.date}>
                   {date}
                 </time>
