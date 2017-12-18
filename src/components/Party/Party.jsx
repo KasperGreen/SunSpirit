@@ -1,9 +1,25 @@
 import React, { PureComponent } from 'react'
 import s from './css'
+import _ from 'lodash'
 
+const artists = [
+  {
+    href: 'https://soundcloud.com/astronaut-ape',
+    name: 'Astronaut Ape'
+  }, {
+    name: 'Coma Soul',
+    href: 'https://soundcloud.com/comasoul'
+  }, {
+    name: 'Jati Div',
+    href: 'https://soundcloud.com/jati_div'
+  }, {
+    name: '[special] Cloower Wooma (Спб.)',
+    href: 'https://soundcloud.com/cloowerwooma',
+    special: true
+  },
+]
 
 export default class Party extends PureComponent {
-
 
   render () {
     return (
@@ -14,21 +30,16 @@ export default class Party extends PureComponent {
         </header>
         <nav className={s.persons}>
           <ul>
-            <li>
-              <h3>
-                Astronaut Ape
-              </h3>
-            </li>
-            <li>
-              <h3>
-                Coma Soul
-              </h3>
-            </li>
-            <li>
-              <h3>
-                Jati Div
-              </h3>
-            </li>
+            {_.map(artists, ({href, name, special}, key) => {
+              return (
+                <li key={key}>
+                  <a {...{href}}
+                    target={'_blank'}
+                     className={special ? s.special_person : s.person}
+                  >{name}</a>
+                </li>
+              )
+            })}
           </ul>
         </nav>
       </article>
