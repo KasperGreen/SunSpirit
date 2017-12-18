@@ -9,6 +9,6 @@
 
 @media screen and (orientation: portrait) {
   .wrapper {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 }

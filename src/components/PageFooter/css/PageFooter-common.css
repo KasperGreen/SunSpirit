@@ -19,6 +19,6 @@
 }
 
 .wrapper a {
-  color: #fefefe;
-  text-shadow: .2rem .2rem #888;
+  color: #42b5fe;
+  text-shadow: .2rem .1rem .1rem rgba(4, 4, 4, 0.6);
 }
