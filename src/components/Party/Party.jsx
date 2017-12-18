@@ -9,8 +9,8 @@ export default class Party extends PureComponent {
     return (
       <article className={s.wrapper}>
         <header>
-          <h1>Атмосфера 5.1.0</h1>
-          <h2>downtempo rave</h2>
+          <h1 className={s.title}>Атмосфера 5.1.0</h1>
+          <cite className={s.genre}>downtempo rave</cite>
         </header>
         <nav className={s.persons}>
           <ul>
