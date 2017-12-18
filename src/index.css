@@ -15,6 +15,7 @@ html, body, * {
 
 a {
   text-decoration: none;
+  text-transform: uppercase;
   color: #19314c;
   transition: all .12s ease-out;
   font-weight: 600;
