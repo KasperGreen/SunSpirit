@@ -4,8 +4,18 @@
   display: flex;
   background: #FEFEFE;
   align-items: stretch;
+  transition: all .42s ease-in;
   justify-content: space-between;
 }
+
+
+
+.loaded_wrapper {
+  composes: wrapper;
+  height: 86%;
+}
+
+
 
 @media screen and (orientation: portrait) {
   .wrapper {

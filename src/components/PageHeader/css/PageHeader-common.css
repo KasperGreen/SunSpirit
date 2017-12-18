@@ -11,6 +11,7 @@
 .loaded_wrapper {
   composes: wrapper;
   filter: blur(3px);
+  height: 16%;
   opacity: .8
 
 }
