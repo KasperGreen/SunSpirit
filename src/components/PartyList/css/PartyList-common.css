@@ -1,6 +1,77 @@
 .wrapper {
   position: relative;
-  background: #FEFEFE;
+  background-size: cover;
   text-align: center;
+  overflow: hidden;
 }
 
+.blured_background {
+  position: absolute;
+  z-index: 1;
+
+  opacity: .42;
+  width: 112%;
+  height: 112%;
+  left: 0;
+  top: 0;
+  filter: blur(3px);
+}
+
+.list {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: stretch;
+  padding: 4.2rem 0;
+}
+
+.party {
+  display: flex;
+}
+
+.date {
+  text-align: center;
+  display: block;
+  font-family: monospace;
+  width: 12rem;
+  text-decoration: line-through;
+
+  padding-left: 1.2rem;
+  font-size: 2.2rem;
+  line-height: 4.2rem;
+  color: #fefefe;
+  text-shadow: .2rem .2rem .42rem #342318;
+
+}
+
+.name {
+  text-align: left;
+  font-weight: 400;
+  line-height: 5rem;
+  font-size: 3.2rem;
+  color: #fefefe;
+  text-transform: uppercase;
+  text-shadow: .2rem .2rem .42rem #342318;
+  padding-right: 2rem;
+}
+
+.active_party {
+  composes: party;
+  background: #fefefe;
+
+}
+
+.active_party .name {
+  color: #121212;
+  text-shadow: none;
+}
+
+.active_party .date {
+  background: #fefefe;
+  color: #121212;
+  text-shadow: none;
+  text-decoration: overline;
+}
