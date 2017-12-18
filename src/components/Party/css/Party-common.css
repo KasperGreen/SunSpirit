@@ -52,20 +52,19 @@
 .person {
   position: relative;
   text-decoration: none;
-  text-transform: uppercase;
-  color: #6BAFE3;
-  transition: all .12s ease-in;
-  font-weight: 300;
+  color: #19314c;
+  transition: all .12s ease-out;
+  font-weight: 600;
   font-size: 3.1415926535rem;
   line-height: 1.42;
   z-index: 2;
 }
 .person:visited {
-  color: #ad41e7;
+  color: #3c514a;
 }
 
 .person:hover, .person:focus {
-  color: #ffc360;
+  color: #d3a151;
   text-decoration: underline;
 }
 
@@ -81,6 +80,9 @@
 @media screen and (orientation: portrait) {
   .wrapper {
     padding-top: 4.2rem;
+  }
+  .person {
+    font-weight: 800;
   }
 
 }
