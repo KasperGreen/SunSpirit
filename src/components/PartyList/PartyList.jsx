@@ -26,7 +26,7 @@ const partys = [
     active: true
   },
 
-]
+].reverse()
 
 export default class PartyList extends PureComponent {
 
