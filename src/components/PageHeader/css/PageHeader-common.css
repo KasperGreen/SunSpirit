@@ -26,6 +26,7 @@
 }
 .loaded_wrapper:hover {
   filter: blur(0);
+  height: 22%;
   opacity: 1;
 }
 
