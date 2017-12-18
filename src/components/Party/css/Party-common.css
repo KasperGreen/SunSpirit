@@ -51,26 +51,11 @@
 
 .person {
   position: relative;
-  text-decoration: none;
-  color: #19314c;
-  transition: all .12s ease-out;
-  font-weight: 600;
   font-size: 3.1415926535rem;
   line-height: 1.42;
   z-index: 2;
 }
-.person:visited {
-  color: #3c514a;
-}
 
-.person:hover, .person:focus {
-  color: #d3a151;
-  text-decoration: underline;
-}
-
-.person:active {
-  color: #aaff02;
-}
 .special_person {
   composes: person;
   padding: 2.2rem 0;

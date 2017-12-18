@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Main, PageHeader } from 'exportComponents'
+import { Main, PageFooter, PageHeader } from 'exportComponents'
 
 export default class App extends Component {
   render () {
@@ -7,7 +7,7 @@ export default class App extends Component {
       <div id="page_wrapper" style={{height: '100%'}}>
         <PageHeader />
         <Main />
-
+        <PageFooter/>
       </div>
     )
   }

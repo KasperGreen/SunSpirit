@@ -13,7 +13,25 @@ html, body, * {
   box-sizing: border-box;
 }
 
+.a {
+  text-decoration: none;
+  color: #19314c;
+  transition: all .12s ease-out;
+  font-weight: 600;
+  z-index: 2;
+}
+a:visited {
+  color: #3c514a;
+}
 
+a:hover, a:focus {
+  color: #d3a151;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #aaff02;
+}
 #page_wrapper, #root {
   height: 100%;
 }

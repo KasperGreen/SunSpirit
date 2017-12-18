@@ -1,5 +1,5 @@
 {
-  "name": "PageHeader",
+  "name": "PageFooter",
   "version": "1.0.0",
-  "main": "PageHeader.jsx"
+  "main": "PageFooter.jsx"
 }
