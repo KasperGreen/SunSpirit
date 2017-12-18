@@ -3,7 +3,7 @@
   background-size: cover;
   transition: all 1.2s cubic-bezier(0.42, -0.07, 0.45, 1.08);
   height: 22rem;
-  height: 42vh;
+  height: 42%;
   position: relative;
 }
 
