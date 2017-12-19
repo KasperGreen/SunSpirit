@@ -20,14 +20,31 @@
 
 .wrapper a {
   color: #42b5fe;
-  text-shadow: .2rem .1rem .1rem rgba(4, 4, 4, 0.6);
+  box-shadow: 0.2rem 0.2rem 1.2rem #6c0b6c, inset 0.2rem 0.2rem 1.2rem #cb6464;
+  border-radius: 0.42rem;
   font-size: 2.42rem;
+  background: rgba(202, 91, 255, 0.25);
+  padding: .42rem 2rem;
+  display: block;
 }
 .two_logo {
   margin:0;
   padding:0;
   margin: -2rem;
+  opacity: .12;
+  filter: invert(100%);
+  transition: all 1.2s cubic-bezier(0.42, 1.08, 0.87, -0.22);
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+    background: none;
+    opacity: 1;
+    filter: invert(0)
+  }
 }
+
 .two_logo img {
   width: 50%;
   height: auto;

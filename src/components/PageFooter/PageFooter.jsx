@@ -2,7 +2,9 @@ import React, { PureComponent } from 'react'
 import s from './css'
 import bg from 'static/images/nebula/nebula_4.svg'
 import logo from 'static/images/logo.svg'
+
 export default class PageFooter extends PureComponent {
+
   render () {
 
     return (
@@ -32,17 +34,53 @@ export default class PageFooter extends PureComponent {
             </li>
           </ul>
         </nav>
-        <figure className={s.two_logo}>
-          <img src={logo}
-               style={{
-                 filter: 'invert(100%) drop-shadow(.22rem .12rem .42rem #febebe)'
-               }}
-          alt={'Логотип SunSpirit'}/>
-          <img src={'https://pp.userapi.com/c319431/v319431746/4609/m5qd5hLK2Ko.jpg'}
-          alt={'Логотип родни'}/>
-        </figure>
+        <button className={s.two_logo}>
+          <img
+            src={logo}
+            style={{
+              filter: 'invert(100%) drop-shadow(.22rem .12rem .42rem #febebe)'
+            }}
+            alt={'Логотип SunSpirit'}
+          />
+          <img
+            src={'https://pp.userapi.com/c319431/v319431746/4609/m5qd5hLK2Ko.jpg'}
+            alt={'Логотип родни'}
+          />
+        </button>
       </footer>
     )
+  }
+
+  scrollEvent = (e) => {
+
+    let scrolled = window.pageYOffset,
+      scrollHeight=document.documentElement.scrollHeight,
+    clientHeight=window.innerHeight,
+    height = scrollHeight + clientHeight
+
+
+    console.log('↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓')
+    console.log(height, ' — height | ')
+    
+    
+    console.log(scrolled, ' — scrolled | ')
+    
+    
+    console.log(clientHeight, ' — clientHeight | ')
+    
+    console.log(scrollHeight, ' — Высота скрола')
+    console.log('↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑')
+
+
+    
+  }
+
+  componentDidMount () {
+    document.addEventListener('scroll', this.scrollEvent)
+  }
+
+  componentWillUnmount () {
+    window.removeEventListener('scroll', this.scrollEvent)
   }
 
 }
