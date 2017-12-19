@@ -11,6 +11,7 @@
   overflow: hidden;
   height: 100%;
   width: 100%;
+  border-right: .42rem #dfe6e8 solid;
 }
 .loaded_wrapper
 {

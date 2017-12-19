@@ -65,11 +65,12 @@
   composes: party;
   margin-top: 1.2rem;
   background: #fefefe;
+  box-shadow: 0.1rem 0.1rem 0.2rem #808;
 
 }
 
 .active_party .name {
-  color: #121212;
+  color: #4c2564;
   text-shadow: none;
   text-transform: uppercase;
   padding-left: .42rem;
