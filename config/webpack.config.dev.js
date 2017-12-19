@@ -185,9 +185,9 @@ module.exports = {
                   plugins: () => [
                     require('postcss-import')({path: paths.appSrc}),
                     require('postcss-composes'),
-                    require('postcss-flexbugs-fixes'),
                     require('postcss-nesting'),
                     require('postcss-nested'),
+                    require('postcss-flexbugs-fixes'),
 
                     autoprefixer({
                                    browsers: [
