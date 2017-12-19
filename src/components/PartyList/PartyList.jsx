@@ -21,7 +21,7 @@ const partys = [
     name: 'Broken Beats'
   },
   {
-    date: '21/12 19:30',
+    date: <span>21/12 <sup>19<span className={'animated_dots'}>:</span>30</sup></span>,
     name: 'Downtempo Rave',
     active: true
   },
@@ -33,6 +33,27 @@ export default class PartyList extends PureComponent {
   render () {
     return (
       <nav className={s.wrapper}>
+        <style
+          dangerouslySetInnerHTML={{
+            __html: `
+        @keyframes time_dots_blinking {
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: .9;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated_dots {
+  animation: time_dots_blinking 1s ease-in-out infinite;
+}
+`
+          }}
+        />
         <div className={s.blured_background} style={{backgroundImage: `url(${background_url})`}} />
         <ul className={s.list}>
           {_.map(partys, ({date, name, active}, key) => {
