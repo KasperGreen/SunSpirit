@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react'
 import s from './css'
 import bg from 'static/images/nebula/nebula_4.svg'
-
+import logo from 'static/images/logo.svg'
 export default class PageFooter extends PureComponent {
   render () {
 
@@ -32,6 +32,12 @@ export default class PageFooter extends PureComponent {
             </li>
           </ul>
         </nav>
+        <figure className={s.two_logo}>
+          <img src={logo}
+          alt={'Логотип SunSpirit'}/>
+          <img src={'https://pp.userapi.com/c319431/v319431746/4609/m5qd5hLK2Ko.jpg'}
+          alt={'Логотип родни'}/>
+        </figure>
       </footer>
     )
   }
