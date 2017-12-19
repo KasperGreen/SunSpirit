@@ -3,39 +3,58 @@
   z-index: 4;
   background-color: #fefefe;
   background-size: cover;
-  padding: 2rem;
+  padding-top: 2rem;
   min-height: 20%;
-  box-shadow: 0 0 2rem #fefefe;
+  box-shadow: inset 0 0 2rem #fefefe;
   font-size: 2.5rem;
+
+  a {
+    color: #fefefe;
+    box-shadow: 0.2rem 0.2rem 1.2rem #6c0b6c, inset 0.2rem 0.2rem 1.2rem #cb6464;
+    border-radius: 0.42rem;
+    font-size: 2.42rem;
+    background: rgba(202, 91, 255, 0.25);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1.42rem 2rem;
+  }
+
+  a:visited {
+    color: #fefebe;
+  }
+
+  a:hover, a:focus {
+    text-decoration: none;
+    background: rgba(202, 91, 255, 0.64);
+
+  }
+
 }
+
 .flex {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
+  flex-direction: row-reverse;
+  li {
+    flex: 1;
+    padding: 2rem;
+  }
 }
 
-.right {
+.sun_spirit_side {
   text-align: right;
+  flex: .87 !important;
 }
 
-.wrapper a {
-  color: #42b5fe;
-  box-shadow: 0.2rem 0.2rem 1.2rem #6c0b6c, inset 0.2rem 0.2rem 1.2rem #cb6464;
-  border-radius: 0.42rem;
-  font-size: 2.42rem;
-  background: rgba(202, 91, 255, 0.25);
-  padding: .42rem 2rem;
-  display: block;
-}
-.two_logo {
-  margin:0;
-  padding:0;
-  margin: -2rem;
+.logo_wrapper {
   opacity: .12;
   filter: invert(100%);
-  transition: all 1.2s cubic-bezier(0.42, 1.08, 0.87, -0.22);
+  transition: all .42s cubic-bezier(0.42, 1.08, 0.87, -0.22);
+  padding-top: 3.2rem;
 
-  &:focus {
+  &:focus, &:hover {
     outline: none;
     box-shadow: none;
     border: none;
@@ -45,7 +64,25 @@
   }
 }
 
-.two_logo img {
-  width: 50%;
-  height: auto;
+.link_icon {
+  height: 9rem;
+  position: relative;
+  margin-right: 2rem;
+}
+
+
+
+
+
+.rodnya {
+  border-radius: .42rem;
+}
+
+.logo_wrapper {
+  display: block;
+  img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
 }
