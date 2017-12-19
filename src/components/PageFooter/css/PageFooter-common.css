@@ -40,6 +40,16 @@
   li {
     flex: 1;
     padding: 2rem;
+
+    &:hover {
+      .logo_wrapper {
+        outline: none;
+        box-shadow: none;
+        border: none;
+        background: none;
+        opacity: 1;
+        filter: invert(0)      }
+    }
   }
 }
 
@@ -54,14 +64,6 @@
   transition: all .42s cubic-bezier(0.42, 1.08, 0.87, -0.22);
   padding-top: 3.2rem;
 
-  &:focus, &:hover {
-    outline: none;
-    box-shadow: none;
-    border: none;
-    background: none;
-    opacity: 1;
-    filter: invert(0)
-  }
 }
 
 .link_icon {
@@ -69,10 +71,6 @@
   position: relative;
   margin-right: 2rem;
 }
-
-
-
-
 
 .rodnya {
   border-radius: .42rem;
