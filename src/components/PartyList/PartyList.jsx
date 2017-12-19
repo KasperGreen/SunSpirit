@@ -21,7 +21,7 @@ const partys = [
     name: 'Broken Beats'
   },
   {
-    date: <span>21/12 <sup className={cs.time}>19<span className={'animated_dots'}>:</span>30</sup></span>,
+    date: <span>21/12 <sup className={s.time}>19<span className={'animated_dots'}>:</span>30</sup></span>,
     name: 'Downtempo Rave',
     active: true
   },
