@@ -35,7 +35,7 @@ export default class PageFooter extends PureComponent {
         <figure className={s.two_logo}>
           <img src={logo}
                style={{
-                 filter: 'drop-shadow(.2rem .2rem 0.42rem #febe20)'
+                 filter: 'drop-shadow(.22rem .12rem .42rem #febebe)'
                }}
           alt={'Логотип SunSpirit'}/>
           <img src={'https://pp.userapi.com/c319431/v319431746/4609/m5qd5hLK2Ko.jpg'}
