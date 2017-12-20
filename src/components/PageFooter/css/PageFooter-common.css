@@ -48,7 +48,8 @@
         border: none;
         background: none;
         opacity: 1;
-        filter: invert(0)      }
+        filter: invert(0);
+      }
     }
   }
 }
