@@ -3,7 +3,7 @@
   background-size: cover;
   text-align: center;
   overflow: hidden;
-  transition: all .12s ease-in-out;
+  transition: all .22s ease-in-out;
 }
 
 .loaded_wrapper {
@@ -16,7 +16,7 @@
   position: absolute;
   z-index: 1;
   background-position: center center;
-  background-size:cover;
+  background-size: cover;
   opacity: .87;
   width: 112%;
   height: 112%;
@@ -39,11 +39,13 @@
   display: flex;
 
 }
+
 .time {
   font-weight: 300;
   display: inline-block;
   margin-right: 2rem;
 }
+
 .date {
   position: relative;
   text-align: center;
@@ -98,19 +100,18 @@
 
 @media screen and (orientation: landscape) {
   .wrapper {
-    width: 14rem;
+    width: 42%;
     opacity: .12;
     &:hover {
       opacity: 1;
       width: 42%;
     }
-    .loaded_wrapper {
-      opacity: 1;
-    }
+  }
+  .loaded_wrapper {
+    opacity: 1;
+    width: 14rem;
   }
 }
-
-
 
 @media screen and (orientation: portrait) {
   .list {
