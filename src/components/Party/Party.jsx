@@ -26,9 +26,7 @@ const artists = [
 
 export default class Party extends PureComponent {
 
-  state = {
-    loaded: false
-  }
+
 
   render () {
 
@@ -83,6 +81,10 @@ export default class Party extends PureComponent {
         this.setState({loaded: true})
       },
       1800)
+  }
+
+  state = {
+    loaded: false
   }
 
   componentWillUnmount () {

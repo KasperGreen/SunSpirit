@@ -3,6 +3,14 @@
   background-size: cover;
   text-align: center;
   overflow: hidden;
+  transition: all .12s ease-out;
+  width: 14rem;
+}
+
+.loaded_wrapper {
+  composes: wrapper;
+  opacity: 1 !important;
+
 }
 
 .blured_background {
@@ -34,6 +42,8 @@
 }
 .time {
   font-weight: 300;
+  display: inline-block;
+  margin-right: 2rem;
 }
 .date {
   position: relative;
@@ -50,10 +60,11 @@
   line-height: 4.2rem;
   color: #fefefe;
   text-shadow: .2rem .2rem .42rem #342318;
-
+  margin-right: 2rem;
 }
 
 .name {
+  overflow: hidden;
   text-align: left;
   line-height: 5rem;
   font-size: 3.2rem;
@@ -85,6 +96,22 @@
   text-decoration: none;
   font-weight: 900;
 }
+
+@media screen and (orientation: landscape) {
+  .wrapper {
+    width: 14rem;
+    opacity: .12;
+    &:hover {
+      opacity: 1;
+      width: 42%;
+    }
+    .loaded_wrapper {
+      opacity: 1;
+    }
+  }
+}
+
+
 
 @media screen and (orientation: portrait) {
   .list {

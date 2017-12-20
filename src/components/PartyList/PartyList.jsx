@@ -31,8 +31,13 @@ const partys = [
 export default class PartyList extends PureComponent {
 
   render () {
+    const {
+      state: {
+        loaded
+      }
+    } = this
     return (
-      <nav className={s.wrapper}>
+      <nav className={loaded ? s.loaded_wrapper : s.wrapper}>
         <style
           dangerouslySetInnerHTML={{
             __html: `
@@ -74,6 +79,24 @@ export default class PartyList extends PureComponent {
         </ul>
       </nav>
     )
+  }
+
+  timeout
+
+  componentWillMount () {
+    this.timeout = setTimeout(
+      () => {
+        this.setState({loaded: true})
+      },
+      1800)
+  }
+
+  state = {
+    loaded: false
+  }
+
+  componentWillUnmount () {
+    clearTimeout(this.timeout)
   }
 
 }
