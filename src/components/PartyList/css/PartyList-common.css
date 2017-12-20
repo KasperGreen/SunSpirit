@@ -102,4 +102,7 @@
   .name {
     display: none;
   }
+  .active_party {
+    margin-bottom: 0;
+  }
 }

@@ -78,6 +78,7 @@
 @media screen and (orientation: portrait) {
   .wrapper {
     padding-top: 4.2rem;
+    border-top: .42rem #dfe6e8 solid;
   }
   .person {
     font-weight: 800;
