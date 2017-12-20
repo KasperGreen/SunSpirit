@@ -85,3 +85,9 @@
     height: auto;
   }
 }
+
+@media screen and (orientation: portrait) {
+  .flex {
+    display: block;
+  }
+}
