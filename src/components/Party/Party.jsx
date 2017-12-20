@@ -6,15 +6,19 @@ import bg_path from 'static/images/earth.jpg'
 const artists = [
   {
     href: 'https://soundcloud.com/astronaut-ape',
-    name: 'Astronaut Ape'
+    name: 'Astronaut Ape',
+    studio: 'Microcosmos Rec.'
   }, {
     name: 'Coma Soul',
-    href: 'https://soundcloud.com/comasoul'
+    href: 'https://soundcloud.com/comasoul',
+    studio: 'Leveldva'
   }, {
     name: 'Jati Div',
+    studio: 'Leveldva',
     href: 'https://soundcloud.com/jati_div'
   }, {
     name: '[special] Cloower Wooma',
+    studio: 'Ultimae Rec., Altar Rec.',
     href: 'https://soundcloud.com/cloowerwooma',
     special: true
   },
@@ -26,27 +30,13 @@ export default class Party extends PureComponent {
     loaded: false
   }
 
-  timeout
-
-  componentWillMount () {
-    this.timeout = setTimeout(
-      () => {
-        this.setState({loaded: true})
-      },
-      1800)
-  }
-
-  componentWillUnmount () {
-    clearTimeout(this.timeout)
-  }
-
   render () {
 
-  const {
-    state: {
-      loaded
-    }
-  } = this
+    const {
+      state: {
+        loaded
+      }
+    } = this
     return (
       <div className={loaded ? s.loaded_wrapper : s.wrapper}>
         <div className={s.background} style={{backgroundImage: `url(${bg_path})`}} />
@@ -61,13 +51,20 @@ export default class Party extends PureComponent {
           </header>
           <nav className={s.persons}>
             <ul>
-              {_.map(artists, ({href, name, special}, key) => {
+              {_.map(artists, ({href, name, special, studio}, key) => {
                 return (
                   <li key={key}>
                     <a {...{href}}
                        target={'_blank'}
                        className={special ? s.special_person : s.person}
-                    >{name}</a>
+                    >
+                      <cite className={s.studio}>
+                        {studio}
+                      </cite>
+
+                      {name}
+
+                    </a>
                   </li>
                 )
               })}
@@ -76,6 +73,20 @@ export default class Party extends PureComponent {
         </article>
       </div>
     )
+  }
+
+  timeout
+
+  componentWillMount () {
+    this.timeout = setTimeout(
+      () => {
+        this.setState({loaded: true})
+      },
+      1800)
+  }
+
+  componentWillUnmount () {
+    clearTimeout(this.timeout)
   }
 
 }

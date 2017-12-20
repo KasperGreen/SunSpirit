@@ -60,13 +60,19 @@
   z-index: 2;
 }
 
+.persons {
+  li {
+    margin-bottom: 1.42rem;
+  }
+}
 .person {
   position: relative;
   font-size: 3.1415926535rem;
   text-transform: uppercase;
   font-weight: 300;
-  line-height: 1.42;
+  line-height: 1.12;
   z-index: 2;
+
 }
 
 .special_person {
@@ -88,4 +94,10 @@
 .version {
   font-weight: 100;
   font-size: .42em;
+}
+
+.studio {
+  font-size: 1.2rem;
+  display: block;
+  font-weight: 500;
 }
