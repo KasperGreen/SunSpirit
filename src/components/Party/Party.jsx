@@ -37,7 +37,12 @@ export default class Party extends PureComponent {
     } = this
     return (
       <div className={loaded ? s.loaded_wrapper : s.wrapper}>
-        <div className={s.background} style={{backgroundImage: `url(${bg_path})`}} />
+
+        <div
+          className={s.background}
+          style={{backgroundImage: `url(${bg_path})`}}
+        />
+
         <article className={s.article}>
           <header>
             <h1 className={s.title}>
