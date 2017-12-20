@@ -22,9 +22,12 @@ a {
   z-index: 2;
 
 }
+
+
 a:visited {
-  color: #3c514a;
+  color: #42644c;
 }
+
 
 a:hover, a:focus {
   color: #d3a151;
