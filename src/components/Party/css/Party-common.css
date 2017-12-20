@@ -19,7 +19,9 @@
 
   .article {
     opacity: 1;
-    filter: invert(0)
+    filter: invert(0);
+    position: relative;
+    z-index: 2;
   }
 }
 
