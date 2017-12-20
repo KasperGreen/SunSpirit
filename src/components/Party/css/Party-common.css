@@ -17,6 +17,10 @@
 .loaded_wrapper
 {
   composes: wrapper;
+
+  .article {
+    opacity: 1;
+  }
 }
 
 .background {
@@ -38,6 +42,7 @@
 }
 
 .article {
+  opacity: .871222;
   height: 100%;
   overflow-y: auto;
 }
