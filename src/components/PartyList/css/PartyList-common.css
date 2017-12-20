@@ -4,7 +4,6 @@
   text-align: center;
   overflow: hidden;
   transition: all .12s ease-in-out;
-  width: 14rem;
 }
 
 .loaded_wrapper {
