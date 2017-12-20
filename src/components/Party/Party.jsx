@@ -41,7 +41,7 @@ export default class Party extends PureComponent {
         <article className={s.article}>
           <header>
             <h1 className={s.title}>
-              Atmosphere <span className={s.version}>5.1.0.12</span>
+              Atmosphere <span className={s.version}>5.2.0.42</span>
             </h1>
             <cite className={s.genre}>
               downtempo rave
