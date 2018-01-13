@@ -1,9 +1,7 @@
 {
   "short_name": "SunSpirit",
   "name": "Sun Spirit Festival Atmosphere",
-  "icons": "icons"
-  :
-  [
+  "icons":  [
   {
   "src": "/android-chrome-192x192.png?v=wAOk3EpxmW",
   "sizes": "192x192",
